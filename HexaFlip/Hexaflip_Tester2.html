@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <title>Group Project</title>
+        <meta name="author" content="its-not-a-bug-its-a-feature" />
+        <link href="hexaflip.css" rel="stylesheet" type="text/css">
+        <link href="style.css" rel="stylesheet" type="text/css">
+        <script src="jquery-3.1.1.js"></script>
+        
+        <!--media player-->
+        <link rel="stylesheet" type="text/css" href="../plugin/css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/demo.css">
+        <script type="text/javascript" src="../plugin/jquery-jplayer/jquery.jplayer.js"></script>
+    <script type="text/javascript" src="../plugin/ttw-music-player-min.js"></script>
+    <script type="text/javascript" src="js/myplaylist.js"></script>
+        
+        <script type="text/javascript">
+        $(document).ready(function(){
+            var description = 'A super cool test playlist with all the super cool songs to accompany you on your journey of logging in.';
+
+            $('body').ttwMusicPlayer(myPlaylist, {
+                currencySymbol:'€',
+                autoPlay:false, 
+                description:description,
+                buyText:'buy',
+                tracksToShow:3,
+                jPlayer:{
+                    swfPath:'../plugin/jquery-jplayer' //You need to override the default swf path any time the directory structure changes
+                }
+            });
+        });
+    </script>
+        
+    </head>
+    <body style="text-align: left; margin: 0; padding: 0">
+        <div class="container" id="container" style="text-align: center">
+            <div class="main" id="main">
+                <div id="hexaflip-demo5" class="demo" style="padding-left: 25%; padding-top: 50px;"></div>
+                <div id="holder">
+                    <button id="submit">try password</button>
+                    <div id="output"></div>
+                </div>
+            </div>
+        </div>
+        
+        
+                <!--media player-->
+<div id="title"></div>
+
+        
+        
+        
+        
+    <script src="hexaflip.js"></script>
+    <script src="jstest.js"></script>
+    </body>
+</html>

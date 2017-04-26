@@ -1,0 +1,20 @@
+#submit{
+    background-color: dodgerblue;
+    color: white;
+    width: 10%;
+    height: 5%;
+    border: 1px solid black;
+    border-radius: 20px;
+    margin: 20px;
+}
+
+#submit:hover{
+    width: 15%;
+    height: 50px;
+    font-size: 20px;
+}
+
+#output{
+    color: red;
+    font-size: 40px;
+}

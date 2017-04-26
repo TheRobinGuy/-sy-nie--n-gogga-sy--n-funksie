@@ -1,0 +1,82 @@
+<head>
+    <title>Group Project</title>
+    <link href="faceDetection.css" rel="stylesheet" type="text/css">
+    <!--<script src="jquery-3.1.1.js"></script>-->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    
+    
+    <link href="dist/css/nanogallery2.min.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="dist/jquery.nanogallery2.min.js"></script>
+    
+    
+</head>
+<body>    
+    <div class="picture-container">
+        <img id="picture" class="picture" src="image_01.jpg">
+    </div>
+    <div class="picture-container">
+        <img id="picture" class="picture" src="image_02.JPG">
+    </div>
+    <div class="picture-container">
+        <img id="picture" class="picture" src="image_03.jpg">
+    </div>
+    
+    <div data-nanogallery2='{
+        "userID": "149071144@N05",
+        "kind": "flickr",
+        "photoset": "none",
+        "thumbnailWidth": "auto",
+        "thumbnailDisplayInterval": 30,
+        "thumbnailLabel": {
+          "display": false
+        },
+        "thumbnailHoverEffect2": "imageScale150|borderDarker|imageScale150"
+      }'>
+
+    </div>
+        
+        <!--<div id="my_nanogallery2" data-nanogallery2></div>-->
+        <!--<div id="my_nanogallery2" data-nanogallery2='{
+        "itemsBaseURL": "\\Client\E$\ClientSide\Group Project\FaceDetection\image_01.jpg",
+        "thumbnailWidth": "auto",
+        "thumbnailDisplayInterval": 30
+      }'>-->
+
+<!--<script>
+$(document).ready(function () {
+  $("#my_nanogallery2").nanoGallery({
+    items: [
+      {
+        src:          'image_01.jpg',    // image url
+        srct:         'image_01.jpg',  // thumbnail url
+        title:        'Title Image1',    // element title
+        description:  'Description1'     // element description
+      },
+      { src: 'image_02.jpg', srct: 'image_02.jpg',  title: 'Title Image2' },
+      { src: 'image_03.jpg', srct: 'image_03.jpg', title: 'Title Image3' }
+    ]
+  )};
+)};
+</script>-->
+    
+    
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <a id="try-it" href="#">
+        <button class="button-try">Check For Faces</button>
+    </a>
+    
+    
+    <script>
+     //   setTimeout(function(){
+     //   $("img").removeClass("nGY2GThumbnailImg").addClass("picture");
+     //   }, 5000);
+      </script>
+    
+    <script src="cascade.js"></script>
+    <script src="ccv.js"></script>
+    <script src="jquery.facedetection.js"></script>
+    <script src="jscript.js"></script>
+</body>
